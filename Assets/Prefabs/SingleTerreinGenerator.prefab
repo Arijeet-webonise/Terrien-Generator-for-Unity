@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000010159886792}
+  m_IsPrefabParent: 1
+--- !u!1 &1000010159886792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000013407635938}
+  - 114: {fileID: 114000011235956254}
+  - 114: {fileID: 114000010987998118}
+  m_Layer: 0
+  m_Name: SingleTerreinGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000013407635938
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010159886792}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114000010987998118
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010159886792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecd5ad12049ed3c46a5ae09dfbd650fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textureRenderer: {fileID: 0}
+  meshFilter: {fileID: 0}
+  meshRenderer: {fileID: 0}
+--- !u!114 &114000011235956254
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010159886792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a588db6b9ca1591408e7d109c9d37e8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DrawMode: 2
+  levelOfDDetail: 0
+  noiseScale: 50
+  octaves: 5
+  persistance: 0.71
+  lacunarity: 1.97
+  meshHeightMultiplyer: 19.63
+  meshHeightCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 0.4000849
+      value: 0.07172483
+      inSlope: 0.7978827
+      outSlope: 0.7978827
+      tangentMode: 0
+    - time: 0.4996088
+      value: 0.13921441
+      inSlope: 1.3461709
+      outSlope: 1.3461709
+      tangentMode: 0
+    - time: 0.599544
+      value: 0.16963792
+      inSlope: 1.8656254
+      outSlope: 1.8656254
+      tangentMode: 0
+    - time: 0.70300823
+      value: 0.3022781
+      inSlope: 2.3537874
+      outSlope: 2.3537874
+      tangentMode: 0
+    - time: 0.95178956
+      value: 0.8280612
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  seed: 12335031
+  offset: {x: 0, y: 0}
+  regions:
+  - name: Water Deep
+    height: 0.3
+    colour: {r: 0.15862082, g: 0, b: 1, a: 0}
+  - name: Water
+    height: 0.4
+    colour: {r: 0, g: 1, b: 0.99999976, a: 0}
+  - name: Sand
+    height: 0.5
+    colour: {r: 0.9862069, g: 1, b: 0, a: 0}
+  - name: Grass
+    height: 0.6
+    colour: {r: 0, g: 1, b: 0.13103461, a: 0}
+  - name: Rock
+    height: 0.7
+    colour: {r: 0.42647058, g: 0.42647058, b: 0.42647058, a: 0}
+  - name: Snow
+    height: 1
+    colour: {r: 1, g: 1, b: 1, a: 0}
+  - name: Rock
+    height: 0.7
+    colour: {r: 0.42647058, g: 0.42647058, b: 0.42647058, a: 0}
+  autoUpdate: 1
